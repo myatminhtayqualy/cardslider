@@ -1,0 +1,274 @@
+body {
+  background-color: aquamarine;
+}
+
+/* img {
+  width: 100%;
+  max-width: 100%;
+} */
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-1 {
+  width: 90%;
+  max-width: 1080px;
+
+  margin: 0 auto;
+  position: relative;
+  /* background-color: red; */
+}
+
+.slick-prev {
+  width: 100px;
+}
+
+.slick-arrow {
+  width: 50px;
+  height: 50px;
+  /* background-color: whitesmoke; */
+  border-radius: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
+
+.slick-next {
+  position: absolute;
+  top: 50%;
+  right: -5%;
+}
+
+.slick-prev {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  z-index: 5;
+}
+
+.slick-next::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+
+  background: url("../img/greater.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.slick-prev::before {
+  content: "";
+  font-family: "Font Awesome 5 Free";
+  font-size: 50px;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+
+  background: url("../img/less.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.cards {
+  border-radius: 24px;
+  position: relative;
+  background-color: #fff;
+
+  /* box-shadow: 0px 16px 26px #00000017; */
+  overflow: hidden;
+  /* padding: 10px; */
+  margin: 20px;
+}
+
+.textcontainer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: #fff;
+  width: 95%;
+  padding: 0 10px;
+  border-radius: 0px 0px 24px 24px;
+}
+
+.textlabel::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+
+  background: url("../icons/navigation\ 1.png") no-repeat center center;
+  background-size: contain;
+  margin-right: 15px;
+}
+
+.traveltext {
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.text-primary {
+  color: var(--text-color);
+}
+
+.poppins {
+  font-family: Poppins;
+}
+
+.notoserif {
+  font-family: "Noto Serif";
+}
+
+.notosan {
+  font-family: "Noto Sans";
+}
+
+.slick-slide {
+  transform: scale(0.9);
+  z-index: 1;
+}
+
+.slick-slide.slick-current {
+  transform: scale(1);
+  z-index: 3;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider-1 {
+    width: 90%;
+  }
+
+  .container {
+    max-width: 450px;
+    padding: 10px;
+  }
+
+  .traveltext {
+    font-size: 16px;
+  }
+
+  .cards {
+    margin: 0 15px;
+  }
+
+  .textcontainer {
+    padding: 0;
+    width: 100%;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .slick-prev {
+    left: 1%;
+  }
+
+  .slick-next {
+    right: 1%;
+  }
+
+  .slick-slide {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider-1 {
+    width: 90%;
+  }
+
+  .container {
+    max-width: 450px;
+    padding: 10px;
+  }
+
+  .traveltext {
+    font-size: 16px;
+  }
+
+  .cards {
+    margin: 0 10px;
+  }
+
+  .textcontainer {
+    padding: 0;
+    width: 100%;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .slick-prev {
+    left: 1%;
+  }
+
+  .slick-next {
+    right: 1%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .slider-1 {
+    width: 95%;
+  }
+
+  .container {
+    max-width: 450px;
+    padding: 10px;
+  }
+
+  .traveltext {
+    font-size: 16px;
+  }
+
+  .cards {
+    margin: 0 5px;
+  }
+
+  .textcontainer {
+    padding: 0;
+    width: 100%;
+  }
+
+  .slick-prev::before,
+  .slick-next::before {
+    width: 30px;
+    height: 30px;
+    /* font-size: 30px; */
+  }
+
+  .slick-prev {
+    left: 1%;
+  }
+
+  .slick-next {
+    right: 1%;
+  }
+}
