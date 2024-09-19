@@ -150,7 +150,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .slider-1 {
-    width: 100%;
+    width: 96%;
   }
 
   .container {
@@ -179,17 +179,17 @@ body {
   }
 
   .slick-prev {
-    left: 1%;
+    left: -2%;
   }
 
   .slick-next {
-    right: 1%;
+    right: -2%;
   }
 }
 
 @media screen and (max-width: 769px) {
   .slider-1 {
-    width: 80%;
+    width: 90%;
   }
 
   .container {
@@ -219,11 +219,11 @@ body {
   }
 
   .slick-prev {
-    left: 1%;
+    left: -3%;
   }
 
   .slick-next {
-    right: 1%;
+    right: -3%;
   }
 
   .slick-slide {
@@ -264,10 +264,10 @@ body {
   }
 
   .slick-prev {
-    left: 1%;
+    left: -2%;
   }
 
   .slick-next {
-    right: 1%;
+    right: -2%;
   }
 }
